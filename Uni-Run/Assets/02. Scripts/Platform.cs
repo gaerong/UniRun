@@ -33,7 +33,7 @@ public class Platform : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
        // 충돌한 상대방의 태그가 Player이고 이전에 플레이어 캐릭터가 밟지 않았다면
-       if (collision.collider.tag == "Plater" && !stepped)
+       if (collision.collider.tag == "Player" && !stepped)
         {
             // 점수를 추가하고 밟힘 상태를 참으로 변경
             stepped = true;
